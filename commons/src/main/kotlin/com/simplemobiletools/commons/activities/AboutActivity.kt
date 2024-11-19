@@ -89,12 +89,23 @@ class AboutActivity : ComponentActivity() {
                     }
                 ) {
                     val (showWebsite, fullVersion) = showWebsiteAndFullVersion(resources, showExternalLinks)
+//                    OtherSection(
+//                        showMoreApps = showGoogleRelations,
+//                        onMoreAppsClick = ::launchMoreAppsFromUsIntent,
+//                        showWebsite = showWebsite,
+//                        onWebsiteClick = ::onWebsiteClick,
+//                        showPrivacyPolicy = showExternalLinks,
+//                        onPrivacyPolicyClick = ::onPrivacyPolicyClick,
+//                        onLicenseClick = ::onLicenseClick,
+//                        version = fullVersion,
+//                        onVersionClick = ::onVersionClick
+//                    )
                     OtherSection(
-                        showMoreApps = showGoogleRelations,
+                        showMoreApps = false,
                         onMoreAppsClick = ::launchMoreAppsFromUsIntent,
-                        showWebsite = showWebsite,
+                        showWebsite = false,
                         onWebsiteClick = ::onWebsiteClick,
-                        showPrivacyPolicy = showExternalLinks,
+                        showPrivacyPolicy = false,
                         onPrivacyPolicyClick = ::onPrivacyPolicyClick,
                         onLicenseClick = ::onLicenseClick,
                         version = fullVersion,
