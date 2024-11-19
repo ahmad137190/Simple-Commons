@@ -230,6 +230,7 @@ private fun AboutScreenPreview() {
                     onDonateClick = {}
                 )
             },
+
             aboutSection = {
                 AboutSection(setupFAQ = true, onFAQClick = {}, onEmailClick = {})
             },
