@@ -54,7 +54,7 @@ class AboutActivity : ComponentActivity() {
                     helpUsSection = {
                         val showHelpUsSection =
                           //  remember { showGoogleRelations || !showExternalLinks }
-                            remember { showGoogleRelations  }
+                            remember { !showGoogleRelations  }
                         HelpUsSection(
                             onRateUsClick = {
                                 onRateUsClick(
@@ -72,10 +72,10 @@ class AboutActivity : ComponentActivity() {
                     },
                     aboutSection = {
                      //   val setupFAQ = rememberFAQ()
-                        val setupFAQ = false
+                        val setupFAQ = true
                       //  if (!showExternalLinks || setupFAQ) {
                         if ( setupFAQ) {
-                            AboutSection(setupFAQ = setupFAQ, onFAQClick = ::launchFAQActivity, onEmailClick = {
+                            AboutSection(setupFAQ = false, onFAQClick = ::launchFAQActivity, onEmailClick = {
                                 onEmailClick(onEmailClickAlertDialogState::show)
                             })
                         }
