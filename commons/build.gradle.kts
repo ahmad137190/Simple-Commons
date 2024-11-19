@@ -64,9 +64,9 @@ android {
 
 publishing.publications {
     create<MavenPublication>("release") {
-        groupId = libs.versions.app.version.groupId.get()
-        artifactId = name
-        version = libs.versions.app.version.versionName.get()
+//        groupId = "com.ahmadkhalili"
+//        artifactId = "ahmadkhalili"
+//        version = "5.34.31"
         afterEvaluate {
             from(components["release"])
         }
