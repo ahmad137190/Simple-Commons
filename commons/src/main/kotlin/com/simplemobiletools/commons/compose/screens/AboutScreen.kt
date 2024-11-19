@@ -107,11 +107,12 @@ internal fun OtherSection(
                 icon = R.drawable.ic_unhide_vector
             )
         }
+        if (showPrivacyPolicy){
         TwoLinerTextItem(
             click = onLicenseClick,
             text = stringResource(id = R.string.third_party_licences),
             icon = R.drawable.ic_article_vector
-        )
+        )}
         TwoLinerTextItem(
             click = onVersionClick,
             text = version,

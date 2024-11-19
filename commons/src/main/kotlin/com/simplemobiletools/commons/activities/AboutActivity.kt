@@ -52,9 +52,9 @@ class AboutActivity : ComponentActivity() {
                 AboutScreen(
                     goBack = ::finish,
                     helpUsSection = {
-                        val showHelpUsSection =
+                        val showHelpUsSection =false
                           //  remember { showGoogleRelations || !showExternalLinks }
-                            remember { !showGoogleRelations  }
+                          //  remember { !showGoogleRelations  }
                         HelpUsSection(
                             onRateUsClick = {
                                 onRateUsClick(
@@ -64,7 +64,8 @@ class AboutActivity : ComponentActivity() {
                             },
                             onInviteClick = ::onInviteClick,
                             onContributorsClick = ::onContributorsClick,
-                            showDonate = resources.getBoolean(R.bool.show_donate_in_about) && showExternalLinks,
+//                            showDonate = resources.getBoolean(R.bool.show_donate_in_about) && showExternalLinks,
+                            showDonate = resources.getBoolean(R.bool.show_donate_in_about) ,
                             onDonateClick = ::onDonateClick,
                             showInvite = showHelpUsSection,
                             showRateUs = showHelpUsSection
