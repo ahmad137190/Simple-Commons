@@ -44,7 +44,7 @@ class AboutActivity : ComponentActivity() {
             val context = LocalContext.current
             val resources = context.resources
             AppThemeSurface {
-                val showExternalLinks = remember { !resources.getBoolean(R.bool.hide_all_external_links) }
+                val showExternalLinks = remember { resources.getBoolean(R.bool.hide_all_external_links) }
                 val showGoogleRelations = remember { !resources.getBoolean(R.bool.hide_google_relations) }
                 val onEmailClickAlertDialogState = getOnEmailClickAlertDialogState()
                 val rateStarsAlertDialogState = getRateStarsAlertDialogState()
@@ -53,7 +53,8 @@ class AboutActivity : ComponentActivity() {
                     goBack = ::finish,
                     helpUsSection = {
                         val showHelpUsSection =
-                            remember { showGoogleRelations || !showExternalLinks }
+                          //  remember { showGoogleRelations || !showExternalLinks }
+                            remember { showGoogleRelations  }
                         HelpUsSection(
                             onRateUsClick = {
                                 onRateUsClick(
@@ -70,8 +71,10 @@ class AboutActivity : ComponentActivity() {
                         )
                     },
                     aboutSection = {
-                        val setupFAQ = rememberFAQ()
-                        if (!showExternalLinks || setupFAQ) {
+                     //   val setupFAQ = rememberFAQ()
+                        val setupFAQ = false
+                      //  if (!showExternalLinks || setupFAQ) {
+                        if ( setupFAQ) {
                             AboutSection(setupFAQ = setupFAQ, onFAQClick = ::launchFAQActivity, onEmailClick = {
                                 onEmailClick(onEmailClickAlertDialogState::show)
                             })

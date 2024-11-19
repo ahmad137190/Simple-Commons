@@ -223,9 +223,9 @@ private fun AboutScreenPreview() {
                     onRateUsClick = {},
                     onInviteClick = {},
                     onContributorsClick = {},
-                    showRateUs = true,
-                    showInvite = true,
-                    showDonate = true,
+                    showRateUs = false,
+                    showInvite = false,
+                    showDonate = false,
                     onDonateClick = {}
                 )
             },
@@ -242,11 +242,11 @@ private fun AboutScreenPreview() {
             }
         ) {
             OtherSection(
-                showMoreApps = true,
+                showMoreApps = false,
                 onMoreAppsClick = {},
                 onWebsiteClick = {},
-                showWebsite = true,
-                showPrivacyPolicy = true,
+                showWebsite = false,
+                showPrivacyPolicy = false,
                 onPrivacyPolicyClick = {},
                 onLicenseClick = {},
                 version = "5.0.4",
