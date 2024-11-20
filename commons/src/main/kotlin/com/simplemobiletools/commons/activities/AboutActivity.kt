@@ -55,6 +55,7 @@ class AboutActivity : ComponentActivity() {
                         val showHelpUsSection =false
                           //  remember { showGoogleRelations || !showExternalLinks }
                           //  remember { !showGoogleRelations  }
+                        if ( showHelpUsSection) {
                         HelpUsSection(
                             onRateUsClick = {
                                 onRateUsClick(
@@ -70,6 +71,7 @@ class AboutActivity : ComponentActivity() {
                             showInvite = showHelpUsSection,
                             showRateUs = showHelpUsSection
                         )
+                       }
                     },
                     aboutSection = {
                      //   val setupFAQ = rememberFAQ()
