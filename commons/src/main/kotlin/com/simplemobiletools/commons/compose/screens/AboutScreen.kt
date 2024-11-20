@@ -55,11 +55,13 @@ internal fun HelpUsSection(
         if (showInvite) {
             TwoLinerTextItem(text = stringResource(id = R.string.invite_friends), icon = R.drawable.ic_add_person_vector, click = onInviteClick)
         }
-        TwoLinerTextItem(
-            click = onContributorsClick,
-            text = stringResource(id = R.string.contributors),
-            icon = R.drawable.ic_face_vector
-        )
+        if (showDonate) {
+            TwoLinerTextItem(
+                click = onContributorsClick,
+                text = stringResource(id = R.string.contributors),
+                icon = R.drawable.ic_face_vector
+            )
+        }
         if (showDonate) {
             TwoLinerTextItem(
                 click = onDonateClick,
