@@ -305,7 +305,9 @@
     <string name="wrong_root_selected">پوشه اشتباهی انتخاب شده است، لطفاً پوشه اصلی کارت SD خود را انتخاب کنید</string>
     <string name="sd_card_usb_same">مسیرهای کارت SD و دستگاه USB نمی‌توانند یکسان باشند</string>
     <string name="app_on_sd_card">به نظر می‌رسد که اپلیکیشن روی کارت SD نصب شده است، که باعث عدم دسترسی به ویجت‌ها می‌شود. شما حتی آن‌ها را در فهرست ویجت‌های موجود نخواهید دید. این محدودیت سیستم است، بنابراین اگر می‌خواهید از ویجت‌ها استفاده کنید، باید اپلیکیشن را به انبار داخلی منتقل کنید.</string>
-    <string name="wrong_folder_selected">پوشه اشتباهی انتخاب شده است، لطفاً مسیر \'%s' را انتخاب کنید</string>
+<!--    <string name="wrong_folder_selected">پوشه اشتباهی انتخاب شده است، لطفاً مسیر \'%s' را انتخاب کنید</string>-->
+    <string name="wrong_folder_selected">Wrong folder selected, please select path \'%s\'</string>
+
     <!-- ویژگی‌های فایل -->
     <string name="properties">ویژگی‌ها</string>
     <string name="path">مسیر</string>
