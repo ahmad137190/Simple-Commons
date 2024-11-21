@@ -976,9 +976,9 @@
     <string name="other_help">کمک‌های دیگر</string>
     <string name="contributors_label">
         <![CDATA[
-            This list contains everyone that noticeably helped any app within the Simple Mobile Tools suite, not only this one. Translations are handled by volunteers,
-            let us know if you want to help too. The guide to translating is at <a href="https://github.com/SimpleMobileTools/General-Discussion#how-can-i-suggest-an-edit-to-a-file">this website</a>, or just contact us at <a href="mailto:hello@simplemobiletools.com">hello@simplemobiletools.com</a> if you have any questions.
-            Thanks to all contributors and other supporters!
+          این لیست شامل همه افرادی است که به طور قابل توجهی به هر برنامه ای در مجموعه ابزارهای ساده موبایل کمک کرده اند، نه تنها این. ترجمه ها توسط داوطلبان انجام می شود،
+ اگر شما هم می خواهید کمک کنید به ما اطلاع دهید. راهنمای ترجمه در <a href="https://github.com/SimpleMobileTools/General-Discussion#how-can-i-suggest-an-edit-to-a-file">این وب سایت</a> است. ، یا اگر سؤالی دارید، فقط با ما در <a href="mailto:hello@simplemobiletools.com">hello@simplemobiletools.com</a> تماس بگیرید.
+ با تشکر از همه مشارکت کنندگان و سایر حامیان!
         ]]>
     </string>
     <string name="translation_arabic">عربی</string>
