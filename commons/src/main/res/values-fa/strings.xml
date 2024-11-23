@@ -853,7 +853,8 @@
     <string name="donate">اهدا</string>
     <string name="follow_us">پیگیری ما</string>
     <string name="copyright">نسخه %1$s\nحق چاپ © Simple Mobile Tools %2$d</string>
-    <string name="support">حمایت</string>
+    <string name="support"> </string>
+<!--    <string name="support">حمایت</string>-->
     <string name="help_us">کمک به ما</string>
     <string name="social">شبکه‌های اجتماعی</string>
     <string name="other">سایر</string>
