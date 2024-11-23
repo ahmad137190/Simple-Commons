@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                     openAbout = ::launchAbout,
                     moreAppsFromUs = ::launchMoreAppsFromUsIntent
                 )
-                AppLaunched()
+                    //  AppLaunched()
             }
         }
     }
